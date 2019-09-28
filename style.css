@@ -1,0 +1,40 @@
+/*Colors*/
+
+/*Navigation*/
+
+.jumbotron {
+    display: block;
+    margin: 5%;
+    width: 95%;
+    max-width: 95%;
+    
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.mainMenu {
+    min-width: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 5px;
+    padding: 2px;
+    height: 200px;
+}
+
+/*divs*/
+
+/*Map*/
+#map {
+    height: 100%;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  div#map {min-height: 360px;}

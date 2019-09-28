@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+    <!--Css-->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!--d3,dc,Queue-->
+    <script type="text/javascript" src="static/js/d3.min.js"></script>
+    <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
+    <script type="text/javascript" src="static/js/dc.min.js"></script>
+    <script type="text/javascript" src="static/js/queue.min.js"></script>
+    <!--Api's-->
+    <!--Scripts-->
+    <script src="https://kit.fontawesome.com/06adabaaa3.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!--Google Map-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-M9g0lwrbKwSVYD0vgPIywlWLLy6zPZM&callback=initMap"></script>
+
+
+</head>
+
+<body>
+    <div id="menuBox" class="jumbotron mx-auto">
+        <div class="container">
+            <!--Navigation-->
+            <!--Base menu resume, games, maps, repositories-->
+            <div id="menu1" class="row mainMenu mx-auto">
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 ">
+                    <button id="resumeNav" type="button" class="btn btn-primary btn-lg resume w-100">Resume</button>
+                </div>
+
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 ">
+                    <button id="gamesNav" type="button" class="btn btn-primary btn-lg games w-100">Games</button>
+                </div>
+
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 ">
+                    <button id="mapsNav" type="button" class="btn btn-primary btn-lg maps w-100">Maps</button>
+                </div>
+
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 ">
+                    <button id="repositoriesNav" type="button" class="btn btn-primary btn-lg repositories w-100">Repositories</button>
+                </div>
+            </div>
+            <!--Games menu-->
+            <div id="menu2" class="row">
+                <div id="gamesMenu" class="col">
+                    <div class="row">
+
+                        <div id="game1" class="col-12 col-lg-6 col-md-6 col-sm-12">
+                            <button id="gamesdropdown" type="button" class="btn btn-primary btn-lg games w-100">Game1</button>
+                        </div>
+
+                        <div id="game2" class="col-12 col-lg-6 col-md-6 col-sm-12">
+                            <button id="gamesdropdown" type="button" class="btn btn-primary btn-lg games w-100">Game2</button>
+                        </div>
+
+                        <div id="game3" class="col-12 col-lg-6 col-md-6 col-sm-12">
+                            <button id="gamesdropdown" type="button" class="btn btn-primary btn-lg games w-100">Game3</button>
+                        </div>
+
+                        <div id="back2" class="col-12 col-lg-6 col-md-6 col-sm-12">
+                            <button type="button" class="btn btn-primary btn-lg games w-100">back</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--Resume Menu-->
+            <div id="menu3" class="row">
+                <div class="col ">
+                    <div class="row">
+
+                        <div id="back3" class="col">
+                            <button type="button" class="btn btn-primary btn-lg games w-100">back</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--Maps Manu-->
+            <div id="menu4" class="row">
+                <div class="col ">
+                    <div class="row">
+
+                        <div id="map" class="col-12"></div>
+
+                        <div id="back4" class="col">
+                            <button type="button" class="btn btn-primary btn-lg games w-100">back</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--Repositories menu-->
+            <div id="menu5" class="row">
+                <div class="col ">
+                    <div class="row">
+
+                        <div id="back5" class="col">
+                            <button type="button" class="btn btn-primary btn-lg games w-100">back</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

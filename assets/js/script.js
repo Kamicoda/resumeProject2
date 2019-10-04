@@ -51,11 +51,11 @@ var map;
 
 function initMap() {
     var myLatLng = { lat: 53.143887, lng: -1.201440 };
-    
+
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 4,
         center: myLatLng,
-        
+
     });
 
     var marker = new google.maps.Marker({
@@ -64,7 +64,3 @@ function initMap() {
         title: 'random location'
     });
 }
-
-
-
-

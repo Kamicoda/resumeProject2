@@ -16,14 +16,16 @@
     <!--Css-->
     <link rel="stylesheet" href="style.css" type="text/css" />
     <!--d3,dc,Queue-->
-    <script type="text/javascript" src="static/js/d3.min.js"></script>
+    <!-- <script type="text/javascript" src="static/js/d3.min.js"></script>
     <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
     <script type="text/javascript" src="static/js/dc.min.js"></script>
-    <script type="text/javascript" src="static/js/queue.min.js"></script>
+    <script type="text/javascript" src="static/js/queue.min.js"></script> -->
     <!--Api's-->
     <!--Scripts-->
     <script src="https://kit.fontawesome.com/06adabaaa3.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/githubApi.js"></script>
+
     <!--Google Map-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-M9g0lwrbKwSVYD0vgPIywlWLLy6zPZM&callback=initMap"></script>
 
@@ -104,19 +106,23 @@
             </div>
             <!--Repositories menu-->
             <div id="menu5" class="row">
-                <div class="col ">
-                    <div class="row">
 
-                        <div id="back5" class="col">
-                            <button type="button" class="btn btn-primary btn-lg games w-100">back</button>
-                        </div>
 
+                <div class="col-6 center-form">
+                    <input type="text" id="gh-username" value "octocat" oninput="fetchGitHubInformation()" />
+                    <div class="col-6" id="gh-user-data"></div>
+                    <div class="col-6" id="gh-repo-data"></div>
+
+
+                    <div id="back5" class="col">
+                        <button type="button" class="btn btn-primary btn-lg games w-100">back</button>
                     </div>
-                </div>
-            </div>
 
+                </div>
+
+
+            </div>
         </div>
-    </div>
 
 </body>
 

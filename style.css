@@ -7,7 +7,7 @@
     margin: 5%;
     width: 95%;
     max-width: 95%;
-    
+
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 0;
@@ -17,65 +17,87 @@
 .mainMenu {
     min-width: 80%;
 }
-
-
+.BigGameNav {
+    transform: skew(25deg);
+    padding-left: 5px;
+}
+.BigResumeNav {
+    transform: skew(-25deg);
+    padding-right: 5px;
+}
 .games {
     height: 110px;
 }
+
 .resume {
     height: 110px;
 }
+
 .tribtncol {
+    width: -50px;
+    padding: 0;
     text-align: center;
+
 }
-.tribtntop {
-    position: relative;
-    text-align: justify;
-    border-top-width: 50px;
-    padding: 0px;
-    border-top-width: 0px;
-    width: 95px;
-    height: 50px;
-	border-left:  40px solid transparent;
-	border-right: 40px solid transparent;
-	border-top: 50px solid #555;
-	border-radius: 10px;
-	border-bottom: 0;
-	margin-bottom: -50;
-	radius: 10px;
-}
+
 .tribtn {
+    border-top: 25px;
+    border-left-width: 25px;
+    border: 50px solid transparent;
+    border-bottom-color: red;
+    border-right-width: 25px;
+    border-left-width: 25px;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 80px;
+    height: 0;
+
+    position: relative;
+    top: -50px;
+    border-radius: 2%;
+
+
+}
+
+/*.tribtn:before { */
+
+.tribtn:after {
+    content: '';
     position: absolute;
-    text-align: center;
-    border-bottom-width: 50px;
-    padding: 0px;
-    border-top-width: 0px;
-    width: 95px;
-    height: 50px;
-	border-left:  40px solid transparent;
-	border-right: 40px solid transparent;
-	border-bottom: 50px solid #555;
-	border-radius: 10px;
-	radius: 10px;
+    left: -25px;
+    top: 50px;
+
+    width: 80px;
+    height: 0;
+    border: 50px solid transparent;
+    border-right-width: 25px;
+    border-left-width: 25px;
+    border-top-color: red;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    border-radius: 2%;
 }
 
-/*.tribtn:before {
-    
-}
-
-/*.tribtn:after {
-    
-}
 /*divs*/
 
 /*Map*/
+
 #map {
     height: 100%;
-  }
-  html, body {
+}
+
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
-  
-  div#map {min-height: 360px;}
+}
+
+div#map {
+    min-height: 360px;
+}

@@ -7,37 +7,29 @@ $(document).ready(function() {
     $('#menu5').toggle();
 
     $('#gamesNav').on('click', function() {
-        $('#menu1').toggle(1000);
         $('#menu2').toggle(1000);
         $('#back2').on('click', function() {
-            $('#menu1').show(1000);
             $('#menu2').hide(1000);
         });
     });
 
     $('#resumeNav').on('click', function() {
-        $('#menu1').toggle(1000);
         $('#menu3').toggle(1000);
         $('#back3').on('click', function() {
-            $('#menu1').show(1000);
             $('#menu3').hide(1000);
         });
     });
 
     $('#mapsNav').on('click', function() {
-        $('#menu1').toggle(1000);
         $('#menu4').toggle(1000);
         $('#back4').on('click', function() {
-            $('#menu1').show(1000);
             $('#menu4').hide(1000);
         });
     });
 
     $('#repositoriesNav').on('click', function() {
-        $('#menu1').toggle(1000);
         $('#menu5').toggle(1000);
         $('#back5').on('click', function() {
-            $('#menu1').show(1000);
             $('#menu5').hide(1000);
         });
     });

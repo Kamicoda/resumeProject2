@@ -33,96 +33,134 @@
 </head>
 
 <body>
-    <div id="menuBox" class="jumbotron mx-auto">
-        <div class="container">
-            <!--Navigation-->
-            <!--Base menu resume, games, maps, repositories-->
-            <div id="menu1" class="row mainMenu mx-auto">
-                <div class="col-12 col-lg-6 col-md-6 col-sm-12 ">
-                    <button id="resumeNav" type="button" class="btn btn-primary btn-lg resume w-100">Resume</button>
-                </div>
 
-                <div class="col-12 col-lg-6 col-md-6 col-sm-12 ">
-                    <button id="gamesNav" type="button" class="btn btn-primary btn-lg games w-100">Games</button>
-                </div>
+    <div id="menu1" class="container mainMenu">
+        <!--Navigation-->
+        <!--Base menu resume, games, maps, repositories-->
+        <div class="row mx-auto">
 
-                <div class="col-12 col-lg-6 col-md-6 col-sm-12 ">
-                    <button id="mapsNav" type="button" class="btn btn-primary btn-lg maps w-100">Maps</button>
-                </div>
-
-                <div class="col-12 col-lg-6 col-md-6 col-sm-12 ">
-                    <button id="repositoriesNav" type="button" class="btn btn-primary btn-lg repositories w-100">Repositories</button>
-                </div>
+            <div class="col-3 BigResumeNav">
+                <button id="resumeNav" type="button" class="btn btn-primary btn-lg resume w-100">Resume</button>
             </div>
-            <!--Games menu-->
-            <div id="menu2" class="row">
-                <div id="gamesMenu" class="col">
-                    <div class="row">
 
-                        <div id="game1" class="col-12 col-lg-6 col-md-6 col-sm-12">
-                            <button id="gamesdropdown" type="button" class="btn btn-primary btn-lg games w-100">Game1</button>
-                        </div>
 
-                        <div id="game2" class="col-12 col-lg-6 col-md-6 col-sm-12">
-                            <button id="gamesdropdown" type="button" class="btn btn-primary btn-lg games w-100">Game2</button>
-                        </div>
 
-                        <div id="game3" class="col-12 col-lg-6 col-md-6 col-sm-12">
-                            <button id="gamesdropdown" type="button" class="btn btn-primary btn-lg games w-100">Game3</button>
-                        </div>
+            <div id="menu1" class="col-6 smallMenu">
+                <div class="row ">
+                    <div class="col tribtncol ">
+                        <button id="Nav" type="button" class="btn tribtntop">1 of 3</button>
+                    </div>
 
-                        <div id="back2" class="col-12 col-lg-6 col-md-6 col-sm-12">
-                            <button type="button" class="btn btn-primary btn-lg games w-100">back</button>
-                        </div>
+                    <div class="col ">
+                        <button id="Nav" type="button" class="btn  tribtntop">2 of 3</button>
+                    </div>
+                </div>
 
+                <div class="row ">
+                    <div class="col ">
+                        <button id="Nav" type="button" class="btn  tribtn">3 of 3</button>
+                    </div>
+
+
+
+                    <div class="col ">
+                        <button id="mapsNav" type="button" class="btn  maps  tribtn">Maps</button>
+                    </div>
+
+                    <div class="col ">
+                        <button id="repositoriesNav" type="button" class="btn repositories  tribtn">Repositories</button>
                     </div>
                 </div>
             </div>
-            <!--Resume Menu-->
-            <div id="menu3" class="row">
-                <div class="col ">
-                    <div class="row">
 
-                        <div id="back3" class="col">
-                            <button type="button" class="btn btn-primary btn-lg games w-100">back</button>
-                        </div>
 
-                    </div>
-                </div>
+
+
+            <div class="col-3 BigGameNav">
+                <button id="gamesNav" type="button" class="btn btn-primary btn-lg games w-100">Games</button>
             </div>
-            <!--Maps Manu-->
-            <div id="menu4" class="row">
-                <div class="col ">
-                    <div class="row">
 
-                        <div id="map" class="col-12"></div>
+        </div>
 
-                        <div id="back4" class="col">
-                            <button type="button" class="btn btn-primary btn-lg games w-100">back</button>
-                        </div>
 
+    </div>
+    </div>
+    <!--Games menu-->
+    <div class="container">
+        <div id="menu2" class="row">
+            <div id="gamesMenu" class="col">
+                <div class="row">
+
+                    <div id="game1" class="col-12 col-lg-6 col-md-6 col-sm-12">
+                        <button id="gamesdropdown" type="button" class="btn btn-primary btn-lg games w-100">Game1</button>
                     </div>
-                </div>
-            </div>
-            <!--Repositories menu-->
-            <div id="menu5" class="row">
 
+                    <div id="game2" class="col-12 col-lg-6 col-md-6 col-sm-12">
+                        <button id="gamesdropdown" type="button" class="btn btn-primary btn-lg games w-100">Game2</button>
+                    </div>
 
-                <div class="col-6 center-form">
-                    <input type="text" id="gh-username" value "octocat" oninput="fetchGitHubInformation()" />
-                    <div class="col-6" id="gh-user-data"></div>
-                    <div class="col-6" id="gh-repo-data"></div>
+                    <div id="game3" class="col-12 col-lg-6 col-md-6 col-sm-12">
+                        <button id="gamesdropdown" type="button" class="btn btn-primary btn-lg games w-100">Game3</button>
+                    </div>
 
-
-                    <div id="back5" class="col">
+                    <div id="back2" class="col-12 col-lg-6 col-md-6 col-sm-12">
                         <button type="button" class="btn btn-primary btn-lg games w-100">back</button>
                     </div>
 
                 </div>
-
-
             </div>
         </div>
+    </div>
+    <!--Resume Menu-->
+    <div class="container">
+        <div id="menu3" class="row">
+            <div class="col ">
+                <div class="row">
+
+                    <div id="back3" class="col">
+                        <button type="button" class="btn btn-primary btn-lg games w-100">back</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Maps Manu-->
+    <div class="container">
+        <div id="menu4" class="row">
+            <div class="col ">
+                <div class="row">
+
+                    <div id="map" class="col-12"></div>
+
+                    <div id="back4" class="col">
+                        <button type="button" class="btn btn-primary btn-lg games w-100">back</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Repositories menu-->
+    <div class="container">
+        <div id="menu5" class="row">
+
+
+            <div class="col-6 center-form">
+                <input type="text" id="gh-username" value "octocat" oninput="fetchGitHubInformation()" />
+                <div class="col-6" id="gh-user-data"></div>
+                <div class="col-6" id="gh-repo-data"></div>
+
+
+                <div id="back5" class="col">
+                    <button type="button" class="btn btn-primary btn-lg games w-100">back</button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
 
 </body>
 

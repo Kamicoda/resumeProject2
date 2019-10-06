@@ -15,16 +15,57 @@
 }
 
 .mainMenu {
-    min-width: 100%;
+    min-width: 80%;
 }
 
-.btn {
-    display: block;
-    margin: 5px;
-    padding: 2px;
-    height: 200px;
+
+.games {
+    height: 110px;
+}
+.resume {
+    height: 110px;
+}
+.tribtncol {
+    text-align: center;
+}
+.tribtntop {
+    position: relative;
+    text-align: justify;
+    border-top-width: 50px;
+    padding: 0px;
+    border-top-width: 0px;
+    width: 95px;
+    height: 50px;
+	border-left:  40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 50px solid #555;
+	border-radius: 10px;
+	border-bottom: 0;
+	margin-bottom: -50;
+	radius: 10px;
+}
+.tribtn {
+    position: absolute;
+    text-align: center;
+    border-bottom-width: 50px;
+    padding: 0px;
+    border-top-width: 0px;
+    width: 95px;
+    height: 50px;
+	border-left:  40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 50px solid #555;
+	border-radius: 10px;
+	radius: 10px;
 }
 
+/*.tribtn:before {
+    
+}
+
+/*.tribtn:after {
+    
+}
 /*divs*/
 
 /*Map*/

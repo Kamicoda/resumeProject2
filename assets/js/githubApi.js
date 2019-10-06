@@ -2,7 +2,7 @@ function userInformationHTML(user) {
     return `
         <h2>${user.name}
             <span class="small-name">
-                (@<a href="${user.html_url}" target="_blank")${user.login}</a>)
+                <a href="${user.html_url}" target="_blank"${user.login}</a>
             </span>
         </h2>
     <div class="gh-content">
@@ -37,6 +37,9 @@ function repoInformationHTML(repos) {
 }
 
 function fetchGitHubInformation(event) {
+    $("#gh-user-data").html("");
+    $("#gh-repo-data").html("");
+    
     var username = $("#gh-username").val();
     if (!username) {
         $("#gh-user-data").html(`<h2>Please enter a GitHub username</h2>`);
@@ -61,8 +64,10 @@ function fetchGitHubInformation(event) {
         function(errorResponse) {
             if (errorResponse.status === 404) {
                 $("gh-user-data").html(`<h2>No info found for this user ${username}</h2>`);
-            }
-            else {
+            } else if(errorResponse.status === 403) {
+                var resetTime = new Date(errorResponse.getResponseHeader('X-RateLimit-Reset')*1000);
+                $("gh-user-data").html(`<h4>Too many requests please wait untill ${resetTime.toLocaleTimeString()}</h4>`)
+            } else {
                 console.log(errorResponse);
                 $("gh-user-data").html(
                     `<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
@@ -70,3 +75,8 @@ function fetchGitHubInformation(event) {
 
         });
 }
+
+$(document).ready(fetchGitHubInformation);
+    
+
+    

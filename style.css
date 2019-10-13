@@ -2,29 +2,18 @@
 
 /*Navigation*/
 
-.jumbotron {
-    display: block;
-    margin: 5%;
-    width: 95%;
-    max-width: 95%;
 
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 0;
-    padding-right: 0;
-}
 
 .mainMenu {
     min-width: 80%;
+    
 }
-.BigGameNav {
-    transform: skew(25deg);
-    padding-left: 5px;
+
+.topnav {
+    margin-bottom: 0px;
 }
-.BigResumeNav {
-    transform: skew(-25deg);
-    padding-right: 5px;
-}
+
+
 .games {
     height: 110px;
 }
@@ -41,49 +30,72 @@
 }
 
 .tribtn {
-    border-top: 25px;
-    border-left-width: 25px;
-    border: 50px solid transparent;
-    border-bottom-color: red;
-    border-right-width: 25px;
-    border-left-width: 25px;
+    border-top: 50px;
+    border-left-width: 50px;
+    border: 101px solid transparent;
+    border-bottom-color: grey;
+    border-right-width: 50px;
+    border-left-width: 50px;
 
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-left: 32px;
-    padding-right: 32px;
-    width: 80px;
+    padding-left: 64px;
+    padding-right: 64px;
+    width: 160px;
     height: 0;
 
     position: relative;
-    top: -50px;
-    border-radius: 2%;
-
+    top: -125px;
+    background: none;
+    
 
 }
-
-/*.tribtn:before { */
 
 .tribtn:after {
     content: '';
     position: absolute;
-    left: -25px;
-    top: 50px;
+    left: -50px;
+    top: 100px;
 
-    width: 80px;
+    width: 160px;
     height: 0;
-    border: 50px solid transparent;
-    border-right-width: 25px;
-    border-left-width: 25px;
-    border-top-color: red;
-    padding-bottom: 10px;
-    padding-left: 32px;
-    padding-right: 32px;
-
-    border-radius: 2%;
+    border: 100px solid transparent;
+    border-right-width: 50px;
+    border-left-width: 50px;
+    border-top-color: grey;
+    padding-bottom: 20px;
+    padding-left: 64px;
+    padding-right: 64px;
+     background: none;
+   
 }
 
+.searchbar {
+    text-align: center;
+    
+}
+
+
+
 /*divs*/
+.content-box {
+    margin-bottom: 0px;
+}
+
+.placeholder {
+    width:100%;
+    height: 578px;
+    color: #fff;
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.footer {
+    background-color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
 
 /*Map*/
 

@@ -4,7 +4,7 @@
                 </path>
                 
   
-  <text text-anchor="end" x="160" y="110">resume</text>
+  <text text-anchor="end" x="140" y="110">games2</text>
   <style><![CDATA[
   text {
     font: bold 36px Verdana, Helvetica, Arial, sans-serif;
@@ -12,5 +12,3 @@
   ]]></style>
   </a>
                 </svg>
-
-

@@ -6,6 +6,8 @@ $(document).ready(function() {
     $('#menu4').toggle();
     $('#menu5').toggle();
     $('#menu6').toggle();
+    $('#menu7').toggle();
+    $('#menu8').toggle();
 
     $('#gamesNav').on('click', function() {
         $('#menu2').toggle(1000);
@@ -47,6 +49,22 @@ $(document).ready(function() {
         $('#menu6').toggle(1000);
         $('#back6').on('click', function() {
             $('#menu6').hide(1000);
+        });
+    });
+
+    $('#game1').on('click', function() {
+        $('#menu3').hide();
+        $('#menu7').toggle(1000);
+        $('#back2').on('click', function() {
+            $('#menu2').hide(1000);
+        });
+    });
+
+    $('#game2').on('click', function() {
+        $('#menu3').hide();
+        $('#menu8').toggle(1000);
+        $('#back2').on('click', function() {
+            $('#menu2').hide(1000);
         });
     });
 
